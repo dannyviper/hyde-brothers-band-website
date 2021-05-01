@@ -5,20 +5,20 @@
         <title>Hyde Brothers Band</title>
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    </head>    
-    <body>
+    </head>   
 
+    <body>
         <!-- Sidebar -->
-        <div class="w3-sidebar w3-bar-block w3-border-right w3-black" style="display:none" id="mySidebar">
-        <button onclick="w3_close()" class="w3-bar-item w3-large w3-black">Close &times;</button>
-            <a href="#home" class="w3-bar-item w3-button w3-wide">Home</a>
-            <a href="#about" class="w3-bar-item w3-button w3-wide">About</a>
-            <a href="#members" class="w3-bar-item w3-button w3-wide">Members</a>
-            <a href="#gigs" class="w3-bar-item w3-button w3-wide">Gigs</a>          
-            <a href="#contact" class="w3-bar-item w3-button w3-wide">Contact</a>
+        <div class="w3-sidebar w3-bar-block w3-border-right w3-black w3-text-blue" style="display:none" id="mySidebar">
+        <button onclick="w3_close()" class="w3-bar-item w3-large w3-black w3-text-blue">Close &times;</button>
+            <a href="#home" class="w3-bar-item w3-button w3-wide w3-text-blue">Home</a>
+            <a href="#about" class="w3-bar-item w3-button w3-wide w3-text-blue">About</a>
+            <a href="#members" class="w3-bar-item w3-button w3-wide w3-text-blue">Members</a>
+            <a href="#gigs" class="w3-bar-item w3-button w3-wide w3-text-blue">Gigs</a>          
+            <a href="#contact" class="w3-bar-item w3-button w3-wide w3-text-blue">Contact</a>
         </div>
 
-        <div id="main">
+        <div id="home">
 
             <!-- Page Content -->
             <div class="w3-container w3-padding-32 w3-black">
@@ -97,17 +97,16 @@
 
             <script>
                 function w3_open() {
-                document.getElementById("main").style.marginLeft = "25%";
+                document.getElementById("home").style.marginLeft = "25%";
                 document.getElementById("mySidebar").style.width = "25%";
                 document.getElementById("mySidebar").style.display = "block";
                 document.getElementById("openNav").style.display = 'none';
                 }
                 function w3_close() {
-                document.getElementById("main").style.marginLeft = "0%";
+                document.getElementById("home").style.marginLeft = "0%";
                 document.getElementById("mySidebar").style.display = "none";
                 document.getElementById("openNav").style.display = "block";
                 }
             </script>
-
     </body>    
 </html>
