@@ -1,180 +1,322 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="description" content="Hyde Brother Band Website.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="Hyde Brother Band Website." />
     <title>Hyde Brothers Band</title>
-    <link rel="stylesheet" href="./styles/w3.css">
+    <link rel="stylesheet" href="./styles/w3.css" />
     <style>
-        @media screen and (max-width: 480px) {
-            #videos {
-                width: 100%;
-                float: center;
-            }
-
-            iframe {
-                width: 100%;
-                height: auto;
-            }
+      @media screen and (max-width: 480px) {
+        #videos {
+          width: 100%;
+          float: center;
         }
-    </style>
-</head>
 
-<body>
+        iframe {
+          width: 100%;
+          height: auto;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
     <!-- Sidebar -->
-    <div class="w3-sidebar w3-bar-block w3-border-right w3-black" style="display:none" id="mySidebar">
-        <div class="w3-padding w3-center">
-            <img src="./images/hyde_brother_logo_thmb.jpg" alt="avatar" style="width:75%">
-        </div><br>
-        <a href="#home"><button class="w3-btn w3-black w3-text-blue w3-wide" onclick="w3_close()">Home</button></a><br>
-        <a href="#about"><button class="w3-btn w3-black w3-text-blue w3-wide"
-                onclick="w3_close()">About</button></a><br>
-        <a href="#members"><button class="w3-btn w3-black w3-text-blue w3-wide"
-                onclick="w3_close()">Members</button></a><br>
-        <a href="#videos"><button class="w3-btn w3-black w3-text-blue w3-wide"
-                onclick="w3_close()">Videos</button></a><br>
-        <a href="#shows"><button class="w3-btn w3-black w3-text-blue w3-wide"
-                onclick="w3_close()">Shows</button></a><br>
-        <a href="#contact"><button class="w3-btn w3-black w3-text-blue w3-wide"
-                onclick="w3_close()">Contact</button></a>
+    <div
+      class="w3-sidebar w3-bar-block w3-border-right w3-black"
+      style="display: none"
+      id="mySidebar"
+    >
+      <div class="w3-padding w3-center">
+        <img
+          src="./images/hyde_brother_logo_thmb.jpg"
+          alt="avatar"
+          style="width: 75%"
+        />
+      </div>
+      <br />
+      <a href="#home"
+        ><button
+          class="w3-btn w3-black w3-text-blue w3-wide"
+          onclick="w3_close()"
+        >
+          Home
+        </button></a
+      ><br />
+      <a href="#about"
+        ><button
+          class="w3-btn w3-black w3-text-blue w3-wide"
+          onclick="w3_close()"
+        >
+          About
+        </button></a
+      ><br />
+      <a href="#members"
+        ><button
+          class="w3-btn w3-black w3-text-blue w3-wide"
+          onclick="w3_close()"
+        >
+          Members
+        </button></a
+      ><br />
+      <a href="#videos"
+        ><button
+          class="w3-btn w3-black w3-text-blue w3-wide"
+          onclick="w3_close()"
+        >
+          Videos
+        </button></a
+      ><br />
+      <a href="#shows"
+        ><button
+          class="w3-btn w3-black w3-text-blue w3-wide"
+          onclick="w3_close()"
+        >
+          Shows
+        </button></a
+      ><br />
+      <a href="#contact"
+        ><button
+          class="w3-btn w3-black w3-text-blue w3-wide"
+          onclick="w3_close()"
+        >
+          Contact
+        </button></a
+      >
     </div>
 
     <!-- Nav Button-->
     <div class="w3-black">
-        <button class="w3-btn w3-black w3-xxlarge" onclick="w3_open()">☰</button>
+      <button class="w3-btn w3-black w3-xxlarge" onclick="w3_open()">☰</button>
     </div>
 
     <div id="home">
+      <!-- Image -->
+      <div class="w3-display-container w3-black">
+        <img
+          class="w3-container w3-center w3-animate-zoom"
+          src="./images/jacket_thmb.jpg"
+          alt="The Band Jacket"
+          style="width: 100%"
+        />
+      </div>
 
-        <!-- Image -->
-        <div class="w3-display-container w3-black">
-            <img class="w3-container w3-center w3-animate-zoom" src="./images/jacket_thmb.jpg" alt="The Band Jacket"
-                style="width:100%">
+      <!-- About -->
+      <div id="about" class="w3-container w3-padding-32 w3-black">
+        <div class="w3-panel w3-card w3-black">
+          <h2 class="w3-center w3-wide w3-text-blue"><b>About</b></h2>
         </div>
+        <div class="w3-panel w3-card w3-blue">
+          <h3 class="w3-center w3-wide w3-text-black">
+            <b
+              >The Hyde Brothers have been playing kick-ass blues rock for over
+              25 years...</b
+            >
+          </h3>
+        </div>
+      </div>
 
-        <!-- About -->
-        <div id="about" class="w3-container w3-padding-32 w3-black">
-            <div class="w3-panel w3-card w3-black">
-                <h2 class="w3-center w3-wide w3-text-blue"><b>About</b></h2>
-            </div>
-            <div class="w3-panel w3-card w3-blue">
-                <h3 class="w3-center w3-wide w3-text-black"><b>The Hyde Brothers have been playing kick-ass blues rock
-                        for over 25 years...</b></h3>
-            </div>
+      <!-- Members -->
+      <div id="members" class="w3-container w3-padding-32 w3-black">
+        <div class="w3-panel w3-card w3-black">
+          <h2 class="w3-center w3-wide w3-text-blue"><b>Members</b></h2>
         </div>
+        <div class="w3-display-container">
+          <img
+            class="w3-container w3-center w3-animate-zoom"
+            src="./images/band_thmb.jpg"
+            alt="Members"
+            style="width: 100%"
+          />
+          <div class="w3-display-bottomleft w3-container w3-text-blue">
+            <b>Dan/Bass</b>
+          </div>
+          <div class="w3-display-bottommiddle w3-container w3-text-blue">
+            <b>Dan/Guitar</b>
+          </div>
+          <div class="w3-display-bottomright w3-container w3-text-blue">
+            <b>Mark/Drums</b>
+          </div>
+        </div>
+      </div>
 
-        <!-- Members -->
-        <div id="members" class="w3-container w3-padding-32 w3-black">
-            <div class="w3-panel w3-card w3-black">
-                <h2 class="w3-center w3-wide w3-text-blue"><b>Members</b></h2>
-            </div>
-            <div class="w3-display-container">
-                <img class="w3-container w3-center w3-animate-zoom" src="./images/band_thmb.jpg" alt="Members"
-                    style="width:100%">
-                <div class="w3-display-bottomleft w3-container w3-text-blue"><b>Dan/Bass</b></div>
-                <div class="w3-display-bottommiddle w3-container w3-text-blue"><b>Dan/Guitar</b></div>
-                <div class="w3-display-bottomright w3-container w3-text-blue"><b>Mark/Drums</b></div>
-            </div>
+      <!-- Videos -->
+      <div id="videos" class="w3-container w3-padding-32 w3-black">
+        <div class="w3-panel w3-card w3-black">
+          <h2 class="w3-center w3-wide w3-text-blue"><b>Videos</b></h2>
         </div>
+        <div class="w3-center">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/32nHkvvcgjg"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <br /><br /><br /><br />
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/XOYGb0sGB64"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <br /><br /><br /><br />
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/fKuIjDP8kVw"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
 
-        <!-- Videos -->
-        <div id="videos" class="w3-container w3-padding-32 w3-black">
-            <div class="w3-panel w3-card w3-black">
-                <h2 class="w3-center w3-wide w3-text-blue"><b>Videos</b></h2>
-            </div>
-            <div class="w3-center">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/RJvaBc7yRDw"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                <br><br><br><br>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/3NF80bVaznY"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                <br><br><br><br>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/XOYGb0sGB64"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                <br><br><br><br>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/fKuIjDP8kVw"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-            </div>
+      <!-- Events -->
+      <div id="shows" class="w3-container w3-padding-32 w3-black">
+        <div class="w3-panel w3-card w3-black">
+          <h2 class="w3-center w3-wide w3-text-blue"><b>Shows</b></h2>
         </div>
+        <div class="w3-panel w3-card w3-blue">
+          <table class="w3-table w3-text-black">
+            <tr>
+              <th>Date</th>
+              <th>Event</th>
+              <th>Location</th>
+            </tr>
+            <tr>
+              <td>Saturday Mar 26th 2022 8:30-12:30pm</td>
+              <td>
+                <a
+                  href="https://tailgatersnb.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Tailgaters Sports Bar & Grill</a
+                >
+              </td>
+              <td>North Branch, MN</td>
+            </tr>
+            <tr>
+              <td>Saturday May 7th 2022 8:30-12:30pm</td>
+              <td>
+                <a
+                  href="https://tailgatersnb.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Tailgaters Sports Bar & Grill</a
+                >
+              </td>
+              <td>North Branch, MN</td>
+            </tr>
+            <tr>
+              <td>Sunday May 29th 2022 3:00-6:30pm</td>
+              <td>
+                <a
+                  href="https://tailgatersnb.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Tailgaters Sports Bar & Grill</a
+                >
+              </td>
+              <td>North Branch, MN</td>
+            </tr>
+            <tr>
+              <td>Friday June 17th 2022 5:00-8:00pm</td>
+              <td>
+                <a
+                  href="https://www.facebook.com/thewoodhill/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Woodhill Bar & Grill</a
+                >
+              </td>
+              <td>Osceola, Wisconsin</td>
+            </tr>
+            <tr>
+              <td>Sunday June 26th 2022 3:00-6:30pm</td>
+              <td>
+                <a
+                  href="https://tailgatersnb.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Tailgaters Sports Bar & Grill</a
+                >
+              </td>
+              <td>North Branch, MN</td>
+            </tr>
+            <tr>
+              <td>Sunday July 3rd 2022 3:00-6:30pm</td>
+              <td>
+                <a
+                  href="https://tailgatersnb.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Tailgaters Sports Bar & Grill</a
+                >
+              </td>
+              <td>North Branch, MN</td>
+            </tr>
+            <tr>
+              <td>Saturday Aug 13th 2022</td>
+              <td>PINNSTOCK 2022 (private party)</td>
+              <td>---</td>
+            </tr>
+          </table>
+        </div>
+      </div>
 
-        <!-- Events -->
-        <div id="shows" class="w3-container w3-padding-32 w3-black">
-            <div class="w3-panel w3-card w3-black">
-                <h2 class="w3-center w3-wide w3-text-blue"><b>Shows</b></h2>
-            </div>
-            <div class="w3-panel w3-card w3-blue">
-                <table class="w3-table w3-text-black">
-                    <tr>
-                        <th>Date</th>
-                        <th>Event</th>
-                        <th>Location</th>
-                    </tr>
-                    <tr>
-                        <td>Saturday Mar 26th 2022 8:30-12:30pm</td>
-                        <td><a href="https://tailgatersnb.com/" target="_blank"
-                                rel="noopener noreferrer">Tailgaters Sports Bar & Grill</a></td>
-                        <td>North Branch, MN</td>
-                    </tr>
-                    <tr>
-                        <td>Friday June 17th 2022 5-8pm</td>
-                        <td><a href="https://www.facebook.com/thewoodhill/" target="_blank"
-                                rel="noopener noreferrer">Woodhill Bar & Grill</a></td>
-                        <td>Osceola, Wisconsin</td>
-                    </tr>
-                    <tr>
-                        <td>Saturday Aug 13th 2022</td>
-                        <td>PINNSTOCK 2022 (private party)</td>
-                        <td>---</td>
-                    </tr>
-                </table>
-            </div>
+      <!-- Contact -->
+      <div id="contact" class="w3-container w3-padding-32 w3-black">
+        <div class="w3-panel w3-card w3-black">
+          <h2 class="w3-center w3-wide w3-text-blue"><b>Contact</b></h2>
         </div>
+        <div class="w3-panel w3-card w3-blue">
+          <a href="mailto:hydebrothersband@gmail.com">
+            <h3 class="w3-center w3-wide w3-text-black"><b>Email Us</b></h3>
+          </a>
+        </div>
+      </div>
 
-        <!-- Contact -->
-        <div id="contact" class="w3-container w3-padding-32 w3-black">
-            <div class="w3-panel w3-card w3-black">
-                <h2 class="w3-center w3-wide w3-text-blue"><b>Contact</b></h2>
-            </div>
-            <div class="w3-panel w3-card w3-blue">
-                <a href="mailto:hydebrothersband@gmail.com">
-                    <h3 class="w3-center w3-wide w3-text-black"><b>Email Us</b></h3>
-                </a>
-            </div>
+      <!-- Logo -->
+      <div class="w3-row">
+        <div class="w3-col s4">
+          <img
+            src="images/hyde_brother_logo_thmb.jpg"
+            alt="avatar1"
+            style="width: 100%"
+          />
         </div>
-
-        <!-- Logo -->
-        <div class="w3-row">
-            <div class="w3-col s4">
-                <img src="images/hyde_brother_logo_thmb.jpg" alt="avatar1" style="width:100%">
-            </div>
-            <div class="w3-col s4">
-                <img src="images/hyde_brother_logo_thmb.jpg" alt="avatar2" style="width:100%">
-            </div>
-            <div class="w3-col s4">
-                <img src="images/hyde_brother_logo_thmb.jpg" alt="avatar3" style="width:100%">
-            </div>
+        <div class="w3-col s4">
+          <img
+            src="images/hyde_brother_logo_thmb.jpg"
+            alt="avatar2"
+            style="width: 100%"
+          />
         </div>
+        <div class="w3-col s4">
+          <img
+            src="images/hyde_brother_logo_thmb.jpg"
+            alt="avatar3"
+            style="width: 100%"
+          />
+        </div>
+      </div>
     </div>
 
     <script>
-        function w3_open() {
-            document.getElementById("mySidebar").style.display = "block";
-        }
-        function w3_close() {
-            document.getElementById("mySidebar").style.display = "none";
-        }
+      function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+      }
+      function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+      }
     </script>
-
-</body>
-
+  </body>
 </html>
